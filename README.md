@@ -2,6 +2,7 @@
 
 This repo contains a solution to solve SDG 10: Reduced Inequalities by Improving Digital Support for Young People.
 The name is Healer.
+
 During the journey of becoming an adult, the youth might face some problems like sleep disorder, game addiction, etc. The young people may not be able to solve those problems themselves and could not figure out the method of requiring help. Their parents or friends might not be that professional in helping them. With new technologies developing, digital along with traditional solutions could better assist in creating a platform where all the important information, functionalities, and support could be found.
 
 Our group plans to design a website. Young people could get their support. Parents could get guidance on helping their kids. Volunteers could gain information on lending a helping hand. Partners and donors could also get access to realize their value.
