@@ -550,3 +550,138 @@ textarea {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+        .floatingButtonWrap {
+          display: block;
+          position: fixed;
+          bottom: 45px;
+          right: 45px;
+          z-index: 999999999;
+      }
+      
+      .floatingButtonInner {
+          position: relative;
+      }
+      
+      .floatingButton {
+          display: block;
+          width: 60px;
+          height: 60px;
+          text-align: center;
+          background: -webkit-linear-gradient(45deg, #8769a9, #507cb3);
+          background: -o-linear-gradient(45deg, #8769a9, #507cb3);
+          background: linear-gradient(45deg, #8769a9, #507cb3);
+          color: #fff;
+          line-height: 50px;
+          position: absolute;
+          border-radius: 50% 50%;
+          bottom: 0px;
+          right: 0px;
+          border: 5px solid #b2bedc;
+          /* opacity: 0.3; */
+          opacity: 1;
+          transition: all 0.4s;
+      }
+      
+      .floatingButton .fa {
+          font-size: 15px !important;
+      }
+      
+      .floatingButton.open,
+      .floatingButton:hover,
+      .floatingButton:focus,
+      .floatingButton:active {
+          opacity: 1;
+          color: #fff;
+      }
+      
+      
+      .floatingButton .fa {
+          transform: rotate(0deg);
+          transition: all 0.4s;
+      }
+      
+      .floatingButton.open .fa {
+          transform: rotate(270deg);
+      }
+      
+      .floatingMenu {
+          position: absolute;
+          bottom: 60px;
+          right: 0px;
+          /* width: 200px; */
+          display: none;
+      }
+      
+    
+    
+      
+      span {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      
+      .chat {
+        height: 600px;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      } 
+      
+      ::-webkit-input-placeholder { 
+        color: .711 
+      }
+       
+      input { 
+        border: 1; 
+        padding: 15px; 
+        margin-left: auto;
+        border-radius: 10px; 
+    
+      }
+      
+      .messages {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        height: 90%;
+        width: 100%;
+        background-color:#CBE6F3;
+        padding: 15px;
+        margin: 15px;
+        border-radius: 10px;
+        color:#000
+      }
+      
+      #bot {
+        margin-left: auto;
+      }
+      
+      .bot {
+        font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,  
+        monospace;
+      }
+      
+      .avatar {
+        height: 25px;
+      }
+      
+      .response {
+        display: flex;
+        align-items: center;
+        margin: 1%;
+      }
+      
+      
+      /* Mobile */
+      
+      @media only screen and (max-width: 980px) {
+        .chat {
+          width: 75vw;
+          margin: 10vw;
+        }
+      }
