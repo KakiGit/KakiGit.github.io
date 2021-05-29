@@ -40,13 +40,13 @@ h1, h2, h3, h5,
   z-index: 3; }
   @media screen and (max-width: 991px) {
     .ftco-navbar-light {
-      background: #000 !important;
+      background: #fff !important;
       top: 0;
       position: relative; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 16px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px; }
     @media screen and (max-width: 960px) {
@@ -78,7 +78,7 @@ h1, h2, h3, h5,
           display: none; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(0, 0, 0, 0.5) !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -140,15 +140,15 @@ h1, h2, h3, h5,
 .ftco-cover {
   background-position: center center; }
   .ftco-cover .ftco-heading {
-    font-size: 45px;
+    font-size: 60px;
     line-height: 1.34;
-    color: #fff; }
+    color: #000; }
     @media screen and (max-width: 768px) {
       .ftco-cover .ftco-heading {
         font-size: 37px;
         line-height: 1.3; } }
   .ftco-cover .ftco-subheading, .ftco-cover p {
-    color: rgba(255, 255, 255, 255); }
+    color: rgba(0, 0, 0, 255); }
   @media screen and (max-width: 768px) {
     .ftco-cover .btn {
       width: 100% !important;
@@ -185,9 +185,6 @@ h1, h2, h3, h5,
     height: 200px;
     left: -10%;
     background: #f2f2f2;
-    -webkit-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
     content: "";
     position: absolute;
     bottom: -100px; }
@@ -224,12 +221,12 @@ h1, h2, h3, h5,
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn.btn-primary {
-    background: #ED1C24;
-    border-color: #ED1C24;
-    color: #fff; }
+    background: #ffffff;
+    border-color: #000000;
+    color: #000; }
     .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
-      border-color: #F08080;
-      background: #F08080; }
+      border-color: #000000;
+      background: #f0f0f0; }
   .btn.btn-outline-white {
     border-color: rgba(255, 255, 255, 0.2);
     background: none; }
@@ -275,10 +272,10 @@ textarea {
 
 .ftco-section,
 .ftco-footer {
-  padding: 7em 0 7em 0; }
+  padding: 0em 0 0em 0; }
   .ftco-section.ftco-slant,
   .ftco-footer.ftco-slant {
-    padding: 7em 0 22em 0; }
+    padding: 0em 0 22em 0; }
   .ftco-section .ftco-heading,
   .ftco-footer .ftco-heading {
     font-size: 40px;
@@ -560,11 +557,11 @@ textarea {
           right: 45px;
           z-index: 999999999;
       }
-      
+
       .floatingButtonInner {
           position: relative;
       }
-      
+
       .floatingButton {
           display: block;
           width: 60px;
@@ -584,11 +581,11 @@ textarea {
           opacity: 1;
           transition: all 0.4s;
       }
-      
+
       .floatingButton .fa {
           font-size: 15px !important;
       }
-      
+
       .floatingButton.open,
       .floatingButton:hover,
       .floatingButton:focus,
@@ -596,17 +593,17 @@ textarea {
           opacity: 1;
           color: #fff;
       }
-      
-      
+
+
       .floatingButton .fa {
           transform: rotate(0deg);
           transition: all 0.4s;
       }
-      
+
       .floatingButton.open .fa {
           transform: rotate(270deg);
       }
-      
+
       .floatingMenu {
           position: absolute;
           bottom: 60px;
@@ -614,15 +611,15 @@ textarea {
           /* width: 200px; */
           display: none;
       }
-      
-    
-    
-      
+
+
+
+
       span {
         padding-right: 15px;
         padding-left: 15px;
       }
-      
+
       .chat {
         height: 600px;
         width: 30vw;
@@ -630,20 +627,20 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      } 
-      
-      ::-webkit-input-placeholder { 
-        color: .711 
       }
-       
-      input { 
-        border: 1; 
-        padding: 15px; 
+
+      ::-webkit-input-placeholder {
+        color: .711
+      }
+
+      input {
+        border: 1;
+        padding: 15px;
         margin-left: auto;
-        border-radius: 10px; 
-    
+        border-radius: 10px;
+
       }
-      
+
       .messages {
         display: flex;
         flex-direction: column;
@@ -656,29 +653,29 @@ textarea {
         border-radius: 10px;
         color:#000
       }
-      
+
       #bot {
         margin-left: auto;
       }
-      
+
       .bot {
-        font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,  
+        font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,
         monospace;
       }
-      
+
       .avatar {
         height: 25px;
       }
-      
+
       .response {
         display: flex;
         align-items: center;
         margin: 1%;
       }
-      
-      
+
+
       /* Mobile */
-      
+
       @media only screen and (max-width: 980px) {
         .chat {
           width: 75vw;
