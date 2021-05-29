@@ -26,7 +26,7 @@ function output(input) {
     .replace(/ please/g, "")
     .replace(/r u/g, "are you");
 
-  if (compare(prompts, replies, text)) { 
+  if (compare(prompts, replies, text)) {
     // Search for exact match in `prompts`
     product = compare(prompts, replies, text);
   } else if (text.match(/thank/gi)) {
@@ -34,7 +34,14 @@ function output(input) {
   } else if (text.match(/(corona|covid|virus)/gi)) {
     // If no match, check if message contains `coronavirus`
     product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
-  } else {
+  } else if (text.match(/(broken|boyfriend|girlfriend)/gi)) {
+    product = broken;
+  } else if (text.match(/(depressed|sad)/gi)) {
+    product = suggestions;
+  } else if (text.match(/(sure|ok|would|chat)/gi)) {
+    product = chat;
+  }
+  else {
     // If all else fails: random alternative
     product = alternative[Math.floor(Math.random() * alternative.length)];
   }

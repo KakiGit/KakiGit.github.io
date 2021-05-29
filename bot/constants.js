@@ -24,12 +24,19 @@ const prompts = [
   ["what", "why", "how", "where", "when"],
   ["no","not sure","maybe","no thanks"],
   [""],
-  ["haha","ha","lol","hehe","funny","joke"]
+  ["haha","ha","lol","hehe","funny","joke"],
+  ['I just broke up with my girlfriend, I don’t know why'],
+  ['I loved her so much but… I am so depressed now :('],
+  ['Yes I would like to have a chat'],
+  
+
 ]
 
 // Possible responses, in corresponding order
 
 const replies = [
+  ['Thank you for letting me know. Would you like to have a chat with our mentors, or hang out with peers?'],
+  ['Here we provide Sekasin and your mentor will be there to help. Enjoy chatting! https://sekasin247.fi/#sekasin-2'],
   ["Hello!", "Hi!", "Hey!", "Hi there!","Howdy"],
   [
     "Fine... how are you?",
@@ -70,7 +77,10 @@ const alternative = [
   "I'm listening...",
   "I don't understand :/"
 ]
-
+ 
+const suggestions =   ['Thank you for letting me know. Would you like to have a chat with our mentors, or hang out with peers?']
+const chat =   [`Here we provide Sekasin and your mentor will be there to help. Enjoy chatting! https://sekasin247.fi/#sekasin-2`]
+const broken =   ['I’m sorry to hear that. But glad we are getting you on HEALER. Tell me more.']
 // Whatever else you want :)
 
 const coronavirus = ["Please stay home", "Wear a mask", "Fortunately, I don't have COVID", "These are uncertain times"]
