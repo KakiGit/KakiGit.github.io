@@ -1,0 +1,3 @@
+[submodule "STATENet_Time_Aware_Suicide_Assessment"]
+	path = STATENet_Time_Aware_Suicide_Assessment
+	url = https://github.com/midas-research/STATENet_Time_Aware_Suicide_Assessment.git
