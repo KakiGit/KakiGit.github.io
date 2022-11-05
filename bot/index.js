@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  addChat("", "I had a bad day.");
+  addChat("", "Bruh chill up. Things are gonna turn well.");
   const inputField = document.getElementById("input");
   inputField.addEventListener("keydown", (e) => {
     if (e.code === "Enter") {
@@ -72,33 +74,42 @@ function compare(promptsArray, repliesArray, string) {
 }
 
 function addChat(input, product) {
-  const messagesContainer = document.getElementById("messages");
+    const messagesContainer = document.getElementById("messages");
 
-  let userDiv = document.createElement("div");
-  userDiv.id = "user";
-  userDiv.className = "user response";
-  userDiv.innerHTML = `<img src="bot/user.png" class="avatar"><span>${input}</span>`;
-  messagesContainer.appendChild(userDiv);
+    let userDiv = document.createElement("div");
+    userDiv.id = "user";
+    userDiv.className = "user response";
+    userDiv.innerHTML = `<img src="bot/user.png" class="avatar"><span>${input}</span>`;
+    if (input != "") {
+        messagesContainer.appendChild(userDiv);
+    }
 
-  let botDiv = document.createElement("div");
-  let botImg = document.createElement("img");
-  let botText = document.createElement("span");
-  botDiv.id = "bot";
-  botImg.src = "bot/bot-mini.png";
-  botImg.className = "avatar";
-  botDiv.className = "bot response";
-  botText.innerText = "Typing...";
-  botDiv.appendChild(botText);
-  botDiv.appendChild(botImg);
-  messagesContainer.appendChild(botDiv);
-  // Keep messages at most recent
-  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+    let botDiv = document.createElement("div");
+    let botImg = document.createElement("img");
+    let botText = document.createElement("span");
+    botDiv.id = "bot";
+    botImg.src = "bot/bot-mini.png";
+    botImg.className = "avatar";
+    botDiv.className = "bot response";
 
-  // Fake delay to seem "real"
-  setTimeout(() => {
-    botText.innerText = `${product}`;
-    textToSpeech(product)
-  }, 2000
-  )
+    if (input != "") {
+        botText.innerText = "Typing...";
+    } else {
+        botText.innerText = `${product}`;
+    }
+    botDiv.appendChild(botText);
+    botDiv.appendChild(botImg);
+    messagesContainer.appendChild(botDiv);
+    // Keep messages at most recent
+    messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+
+    if ( input != "" ) {
+        // Fake delay to seem "real"
+        setTimeout(() => {
+              botText.innerText = `${product}`;
+              textToSpeech(product)
+            }, 2000
+        )
+    }
 
 }
